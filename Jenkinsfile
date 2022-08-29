@@ -1,4 +1,5 @@
 @Library('shared-library')_
+def value
 pipeline{
     agent any
     stages{
@@ -11,7 +12,9 @@ pipeline{
             steps{
                 script{
                     yamlInput = readYaml file: "${WORKSPACE}/input.yaml"
-                    print(yamlInput.class())
+                    for (value in yamlInput.databases){
+                        print(value.usr)
+                    }
                 }
             }
         }
