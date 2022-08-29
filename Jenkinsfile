@@ -2,7 +2,7 @@
 pipeline{
     agent any
     stages{
-        stage{
+        stage('db_fetch'){
             dbValues(val,val1,val2)
         }
     }
