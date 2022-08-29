@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('db_fetch'){
             steps{
-                dbValues(val,val1,val2)
+                dbValues("val","val1","val2")
             }
         }
     }
