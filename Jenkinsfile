@@ -1,5 +1,4 @@
 @Library('shared-library')_
-def value
 pipeline{
     agent any
     stages{
