@@ -7,5 +7,13 @@ pipeline{
                 dbValues("val","val1","val2")
             }
         }
+        stage('read yaml'){
+            steps{
+                script{
+                    yamlInput = readYaml file: "${WORKSPACE}/input.yaml"
+                    print(yamlInput.class())
+                }
+            }
+        }
     }
 }

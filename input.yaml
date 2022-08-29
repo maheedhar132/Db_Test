@@ -1,0 +1,10 @@
+databases:
+  db1:
+    pswd: pass1
+    usr:  usr1
+    url: http://db1.hostname.domain:8081
+  db2:
+    pswd: pass2
+    usr: usr2
+    url: http://db2.hostname.domain:8081
+
