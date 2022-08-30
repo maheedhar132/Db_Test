@@ -13,7 +13,7 @@ pipeline{
                     yamlInput = readYaml file: "${WORKSPACE}/input.yaml"
                     for (value in yamlInput.databases){
                         for (value1 in yamlInput.value){
-                            print(value1.usr)
+                            print(value1)
                         }
                     }
                 }
