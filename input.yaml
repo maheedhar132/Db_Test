@@ -1,5 +1,7 @@
 --- 
-databases: "db1 db2"
+databases: 
+  - db1
+  - db2
 db1: 
   pswd: pass1
   url: "http://db1.hostname.domain:8081"
