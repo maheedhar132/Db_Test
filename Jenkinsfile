@@ -16,8 +16,8 @@ pipeline{
                         def usr = yamlInput.get(value).usr
                         str += """ user = ${usr} """
                     }
+                    print(str)
                 }
-                print(str)
             }
         }
     }
