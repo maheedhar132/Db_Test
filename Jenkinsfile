@@ -15,7 +15,7 @@ pipeline{
                     for (value in yamlInput.databases){
                         def usr = yamlInput.get(value).usr
                         str += """ user = ${usr} """
-                        str += """ db $value """
+                        str += """ db ${value} """
                     }
                     print(str)
                 }
