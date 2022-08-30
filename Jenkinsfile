@@ -10,12 +10,14 @@ pipeline{
         stage('read yaml'){
             steps{
                 script{
+                    String str = """values """ 
                     yamlInput = readYaml file: "${WORKSPACE}/input.yaml"
                     for (value in yamlInput.databases){
-                        print(value)
-                        print(yamlInput.get(value).usr)
+                        def usr = yamlInput.get(value).usr
+                        str += """ user = ${usr} """
                     }
                 }
+                print(str)
             }
         }
     }
