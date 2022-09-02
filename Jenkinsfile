@@ -19,7 +19,7 @@ pipeline{
                         str += """ db ${value} """
                     }
                     print(str)
-                    shellS = sh "env | grep pushed"
+                    shellS = sh """env | grep pushed"""
                     print(shellS)
                 }
             }
