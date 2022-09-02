@@ -22,6 +22,8 @@ pipeline{
                     print(str)
                     echo "$db1_pushed"
                     echo "$db1_Push"
+                    shellS = sh "env | grep pushed"
+                    print(shellS)
                 }
             }
         }
